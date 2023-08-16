@@ -8,6 +8,6 @@
 #include "huawei-bt.dtsi"
 #include "huawei-fm.dtsi"
 #include "huawei_dev_detect-va.dtsi"
-#include "../huawei-sdm450-camera-chq-lx3.dtsi"
+#include "../huawei-sdm450-camera-chq.dtsi"
 #include "huawei-antenna-boardid.dtsi"
 #include "huawei-gpio-led.dtsi"

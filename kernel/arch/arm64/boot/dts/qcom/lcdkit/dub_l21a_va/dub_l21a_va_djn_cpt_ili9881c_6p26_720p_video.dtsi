@@ -185,12 +185,12 @@
 		39 01 00 00 00 00 02 71 01
 		39 01 00 00 00 00 02 A0 00
 		39 01 00 00 00 00 02 A1 1A
-		39 01 00 00 00 00 02 A2 29
-		39 01 00 00 00 00 02 A3 17
-		39 01 00 00 00 00 02 A4 1E
-		39 01 00 00 00 00 02 A5 34
-		39 01 00 00 00 00 02 A6 28
-		39 01 00 00 00 00 02 A7 24
+		39 01 00 00 00 00 02 A2 2C
+		39 01 00 00 00 00 02 A3 19
+		39 01 00 00 00 00 02 A4 1F
+		39 01 00 00 00 00 02 A5 38
+		39 01 00 00 00 00 02 A6 2D
+		39 01 00 00 00 00 02 A7 28
 		39 01 00 00 00 00 02 A8 AD
 		39 01 00 00 00 00 02 A9 1A
 		39 01 00 00 00 00 02 AA 24
@@ -205,12 +205,12 @@
 		39 01 00 00 00 00 02 B3 39
 		39 01 00 00 00 00 02 C0 00
 		39 01 00 00 00 00 02 C1 1A
-		39 01 00 00 00 00 02 C2 29
-		39 01 00 00 00 00 02 C3 17
-		39 01 00 00 00 00 02 C4 1E
-		39 01 00 00 00 00 02 C5 34
-		39 01 00 00 00 00 02 C6 28
-		39 01 00 00 00 00 02 C7 24
+		39 01 00 00 00 00 02 C2 2C
+		39 01 00 00 00 00 02 C3 19
+		39 01 00 00 00 00 02 C4 1F
+		39 01 00 00 00 00 02 C5 38
+		39 01 00 00 00 00 02 C6 2D
+		39 01 00 00 00 00 02 C7 28
 		39 01 00 00 00 00 02 C8 AD
 		39 01 00 00 00 00 02 C9 1A
 		39 01 00 00 00 00 02 CA 24
@@ -326,17 +326,17 @@
 		hw,lcdkit-v-top-border = <0>;
 		hw,lcdkit-v-bottom-border = <0>;
 		hw,lcdkit-panel-framerate = <60>;
-		hw,lcdkit-panel-clockrate = <668340000>;
+		hw,lcdkit-panel-clockrate = <655460000>;
 		hw,lcdkit-panel-timings = [21 1D 06 07 04 03 04 A0
 			21 1D 06 07 04 03 04 A0
 			21 1D 06 07 04 03 04 A0
 			21 1D 06 07 04 03 04 A0
 			21 14 06 07 04 03 04 A0];
-		hw,lcdkit-panel-timings-phy-v2 = [21 1D 06 07 04 02 04 A0
-                        21 1D 06 07 04 02 04 A0
-                        21 1D 06 07 04 02 04 A0
-                        21 1D 06 07 04 02 04 A0
-                        21 14 06 07 04 02 04 A0];
+		hw,lcdkit-panel-timings-phy-v2 = [21 1D 06 07 04 03 04 A0
+                        21 1D 06 07 04 03 04 A0
+                        21 1D 06 07 04 03 04 A0
+                        21 1D 06 07 04 03 04 A0
+                        21 14 06 07 04 03 04 A0];
 		hw,lcdkit-t-clk-pre = <0x27>;
 		hw,lcdkit-t-clk-post = <0x0C>;
 		hw,lcdkit-tx-eot-append;
@@ -359,10 +359,10 @@
 		hw,lcdkit-panel-bl-maxnit = <470>;
 		hw,lcdkit-panel-getblmaxnit-type = <1>;
 		hw,lcdkit-panel-getblmaxnit-offset = <360>;
-		hw,lcdkit-h-back-porch = <76>;
+		hw,lcdkit-h-back-porch = <60>;
 		hw,lcdkit-h-front-porch = <84>;
 		hw,lcdkit-h-pulse-width = <8>;
-		hw,lcdkit-v-back-porch = <20>;
+		hw,lcdkit-v-back-porch = <18>;
 		hw,lcdkit-v-pulse-width = <8>;
 		hw,lcdkit-v-front-porch = <20>;
 		hw,lcdkit-h-sync-skew = <0>;

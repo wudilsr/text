@@ -1184,21 +1184,6 @@ static int lcdkit_on(struct platform_device* pdev)
             //The function of double click to wake do not open this switch
             if(lcdkit_info.panel_infos.idle2_lcd_reset_low)
             {
-                if ( g_tskit_ic_type && lcdkit_info.panel_infos.idle2_lcd_reset_low == LCDKIT_TS_RESUME_BEFORE_LCD_RST)
-                {
-                     LCDKIT_INFO("TS first resume before lcd reset high.\n");
-                     if(lcdkit_info.panel_infos.tp_resume_no_sync)
-                     {
-                        data_for_ts_resume = LCDKIT_NO_SYNC_TIMEOUT;
-                        lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
-                     }
-                     else
-                     {
-                        data_for_ts_resume = LCDKIT_SHORT_SYNC_TIMEOUT;
-                        lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
-                     }
-                     mdelay(lcdkit_info.panel_infos.delay_af_tp_reset);
-                }
                 gpio_cmds_tx(lcdkit_gpio_reset_high_cmds, \
                         ARRAY_SIZE(lcdkit_gpio_reset_high_cmds));
             }
@@ -1223,23 +1208,20 @@ static int lcdkit_on(struct platform_device* pdev)
         mdelay(lcdkit_info.panel_infos.delay_af_LP11);
 
 lp_sequence_restart:
-        if(!lcdkit_is_enter_sleep_mode() || (lcdkit_info.panel_infos.idle2_lcd_reset_low != LCDKIT_TS_RESUME_BEFORE_LCD_RST))
+        if ( g_tskit_ic_type && lcdkit_info.panel_infos.ts_resume_ctrl_mode == LCDKIT_TS_RESUME_BEFORE_LCD_RST)
         {
-            if ( g_tskit_ic_type && lcdkit_info.panel_infos.ts_resume_ctrl_mode == LCDKIT_TS_RESUME_BEFORE_LCD_RST)
+            LCDKIT_INFO("Call ts first resume before lcd reset.\n");
+            if(lcdkit_info.panel_infos.tp_resume_no_sync)
             {
-                LCDKIT_INFO("Call ts first resume before lcd reset.\n");
-                if(lcdkit_info.panel_infos.tp_resume_no_sync)
-                {
-                    data_for_ts_resume = LCDKIT_NO_SYNC_TIMEOUT;
-                    lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
-                }
-                else
-                {
-                    data_for_ts_resume = LCDKIT_SHORT_SYNC_TIMEOUT;
-                    lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
-                }
-                mdelay(lcdkit_info.panel_infos.delay_af_tp_reset);
+                data_for_ts_resume = LCDKIT_NO_SYNC_TIMEOUT;
+                lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
             }
+            else
+            {
+                data_for_ts_resume = LCDKIT_SHORT_SYNC_TIMEOUT;
+                lcdkit_notifier_call_chain(LCDKIT_TS_RESUME_DEVICE, &data_for_ts_resume);
+            }
+            mdelay(lcdkit_info.panel_infos.delay_af_tp_reset);
         }
         // lcd gpio normal
         if (lcdkit_info.panel_infos.second_reset)
@@ -1514,9 +1496,7 @@ static int lcdkit_off(struct platform_device* pdev)
                 /*notify early suspend*/
                 lcdkit_notifier_call_chain(LCDKIT_TS_BEFORE_SUSPEND, &data_for_notify_early_suspend);
                 /*notify suspend*/
-                if(!lcdkit_info.panel_infos.tp_after_lcd_reset){
-                    lcdkit_notifier_call_chain(LCDKIT_TS_SUSPEND_DEVICE, &data_for_notify_suspend);
-                }
+                lcdkit_notifier_call_chain(LCDKIT_TS_SUSPEND_DEVICE, &data_for_notify_suspend);
             }
         }
 
@@ -1556,13 +1536,6 @@ static int lcdkit_off(struct platform_device* pdev)
         // lcd pinctrl low
         pinctrl_cmds_tx(pdev, lcdkit_pinctrl_low_cmds,
                         ARRAY_SIZE(lcdkit_pinctrl_low_cmds));
-        }
-
-        if (g_tskit_ic_type && lcdkit_info.panel_infos.tp_after_lcd_reset)
-        {
-            /*notify suspend*/
-            lcdkit_notifier_call_chain(LCDKIT_TS_SUSPEND_DEVICE, &data_for_notify_suspend);
-            msleep(lcdkit_info.panel_infos.tp_befor_vsn_low_delay);
         }
 
         if (lcdkit_bias_is_gpio_ctrl_power())
@@ -1696,11 +1669,13 @@ static int lcdkit_off(struct platform_device* pdev)
 
     }else
     {
-        if (g_tskit_ic_type && lcdkit_info.panel_infos.tp_after_lcd_reset)
+        //The function of double click to wake do not open this switch
+        if(lcdkit_info.panel_infos.idle2_lcd_reset_low)
         {
-            /*notify suspend*/
-            lcdkit_notifier_call_chain(LCDKIT_TS_SUSPEND_DEVICE, &data_for_notify_suspend);
+            gpio_cmds_tx(lcdkit_gpio_reset_low_cmds, \
+                    ARRAY_SIZE(lcdkit_gpio_reset_low_cmds));
         }
+
             // lcd reset gpio free
             gpio_cmds_tx(lcdkit_gpio_reset_free_cmds, \
                 ARRAY_SIZE(lcdkit_gpio_reset_free_cmds));

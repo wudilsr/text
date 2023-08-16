@@ -736,7 +736,3 @@ config TCP_AUTOTUNING
 config TCP_NODELAY
 	bool "tcp no delay"
 	default n
-
-config HW_SYN_LINEAR_RETRY
-	bool "Huawei tcp syn sent linear retry support"
-	default n

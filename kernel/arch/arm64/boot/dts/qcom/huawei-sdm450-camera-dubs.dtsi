@@ -26,8 +26,7 @@
 		qcom,current = <1000>;
 	};
 	pmi632_torch1: qcom,torch_1 {
-		qcom,current = <100>;
-		qcom,max-current = <100>;
+		qcom,current = <120>;
 	};
 };
 

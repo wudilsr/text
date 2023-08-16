@@ -533,8 +533,6 @@ static const char *default_batt_type	= "Unknown Battery";
 static const char *loading_batt_type	= "Loading Battery Data";
 static const char *missing_batt_type	= "Disconnected Battery";
 
-static struct fg_chip *global_fg_chip = NULL;
-
 /* Log buffer */
 struct fg_log_buffer {
 	size_t rpos;	/* Current 'read' position in buffer */
@@ -6847,8 +6845,6 @@ static int fg_probe(struct platform_device *pdev)
 		chip->revision[ANA_MAJOR], chip->revision[ANA_MINOR],
 		chip->pmic_subtype);
 
-	global_fg_chip = chip;
-
 	return rc;
 
 cancel_work:
@@ -6954,11 +6950,6 @@ static int fg_sense_type_set(const char *val, const struct kernel_param *kp)
 	struct fg_chip *chip;
 	int old_fg_sense_type = fg_sense_type;
 
-	if (global_fg_chip == NULL){
-		pr_err("qpnp fg chip not init, return directly\n");
-		return 0;
-	}
-
 	rc = param_set_int(val, kp);
 	if (rc) {
 		pr_err("Unable to set fg_sense_type: %d\n", rc);
@@ -6996,11 +6987,6 @@ static int fg_restart_set(const char *val, const struct kernel_param *kp)
 {
 	struct power_supply *bms_psy;
 	struct fg_chip *chip;
-
-	if (global_fg_chip == NULL){
-		pr_err("qpnp fg chip not init, return directly\n");
-		return 0;
-	}
 
 	bms_psy = power_supply_get_by_name("bms");
 	if (!bms_psy) {

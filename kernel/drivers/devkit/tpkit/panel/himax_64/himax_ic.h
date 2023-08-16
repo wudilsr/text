@@ -549,11 +549,6 @@ struct himax_touching_data
 #define HX_VER_FW_CFG				 	0x39
 #define HX_MAX_PRBUF_SIZE           	PIPE_BUF
 
-
-#define HX_FW_DATA_FW_STOP	0x000000A5
-#define HX_FW_ADDR_CTRL_FW	0x9000005c
-#define HX_FW_WAKING	0x05
-
 enum input_protocol_type {
 	PROTOCOL_TYPE_A	= 0x00,
 	PROTOCOL_TYPE_B	= 0x01,

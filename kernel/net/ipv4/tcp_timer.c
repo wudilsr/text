@@ -592,12 +592,6 @@ out_reset_timer:
 	    icsk->icsk_retransmits <= TCP_THIN_LINEAR_RETRIES) {
 		icsk->icsk_backoff = 0;
 		icsk->icsk_rto = min(__tcp_set_rto(tp), TCP_RTO_MAX);
-#ifdef CONFIG_HW_SYN_LINEAR_RETRY
-        } else if (sk->sk_state == TCP_SYN_SENT &&
-            icsk->icsk_retransmits <= TCP_SYN_SENT_LINEAR_RETRIES &&
-            icsk->icsk_rto == TCP_TIMEOUT_INIT) {
-            icsk->icsk_backoff = 0;
-#endif
 	} else {
 		/* Use normal (exponential) backoff */
 		icsk->icsk_rto = min(icsk->icsk_rto << 1, TCP_RTO_MAX);

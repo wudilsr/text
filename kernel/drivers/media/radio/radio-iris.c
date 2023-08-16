@@ -56,9 +56,6 @@ static bool is_headset_on = false;
 static bool is_multi_mode = false;
 //true: built-in FM designed only pull up and down gpio is needed
 static bool is_single_mode = false;
-//a flag to ignore the unnecessary tune event after the scan complete event received from FM chip
-//false: do not report the tune event after the scan(not seek) complete
-static bool gTuneState = true;
 
 /*********************************************************************************
 Function:       get_design_type
@@ -2742,8 +2739,7 @@ static inline void hci_ev_search_compl(struct radio_hci_dev *hdev,
 		struct sk_buff *skb)
 {
 	struct iris_device *radio = video_get_drvdata(video_get_dev());
-	if (SCAN == radio->g_search_mode)
-		gTuneState = false;
+
 	radio->search_on = 0;
 	iris_q_event(radio, IRIS_EVT_SEEK_COMPLETE);
 }
@@ -3205,12 +3201,7 @@ void radio_hci_event_packet(struct radio_hci_dev *hdev, struct sk_buff *skb)
 	FMDBG("event 0x%x", event);
 	switch (event) {
 	case HCI_EV_TUNE_STATUS:
-		if(gTuneState)
-			hci_ev_tune_status(hdev, skb);
-		else {
-			gTuneState = true;
-			FMDERR("when scan complete, set tune state.");
-		}
+		hci_ev_tune_status(hdev, skb);
 		break;
 	case HCI_EV_SEARCH_PROGRESS:
 	case HCI_EV_SEARCH_RDS_PROGRESS:
@@ -4267,7 +4258,6 @@ static int iris_vidioc_s_ctrl(struct file *file, void *priv,
 				retval = -EINVAL;
 				goto end;
 			}
-			gTuneState = true;
 			radio->mode = FM_RECV_TURNING_ON;
 			retval = hci_cmd(HCI_FM_ENABLE_RECV_CMD,
 							 radio->fm_hdev);

@@ -799,10 +799,6 @@ void lcdkit_parse_panel_dts(struct device_node* np)
     OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-iovcc-on-is-need-reset", &lcdkit_info.panel_infos.first_reset, 0);
     OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-vsn-on-is-need-reset", &lcdkit_info.panel_infos.second_reset, 0);
     OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-reset-pull-high-flag", &lcdkit_info.panel_infos.reset_pull_high_flag, 0);
-    /*for tp_reset after lcd reset low*/
-    OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-tp-after-lcd-reset", &lcdkit_info.panel_infos.tp_after_lcd_reset, 0);
-    OF_PROPERTY_READ_U8_DEFAULT(np, "hw,tp-befor-vsn-low-delay", &lcdkit_info.panel_infos.tp_befor_vsn_low_delay, 0);
-
     OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-tp-reset-before-lcd-reset", &lcdkit_info.panel_infos.tprst_before_lcdrst, 0);
     /*for delay of power sequence*/
     OF_PROPERTY_READ_U8_DEFAULT(np, "hw,lcdkit-delay-af-vci-on", &lcdkit_info.panel_infos.delay_af_vci_on, 0);

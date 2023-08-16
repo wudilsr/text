@@ -2705,6 +2705,7 @@ static int gt1x_chip_wrong_touch(void)
 static int gt1x_chip_resume(void)
 {
 	struct gt1x_ts_data *ts = gt1x_ts;
+	int ret = NO_ERR;
 	TS_LOG_INFO("%s: enter\n", __func__);
 	switch (ts->dev_data->easy_wakeup_info.sleep_mode) {
 	case TS_POWER_OFF_MODE:
@@ -2719,7 +2720,10 @@ static int gt1x_chip_resume(void)
 		break;
 	}
 
-	gt1x_resume_chip_reset();
+	ret = gt1x_chip_reset();
+	if (ret < 0){
+		TS_LOG_ERR("%s, failed to gt1x_chip_reset, ret = %d\n", __func__, ret);
+	}
 	TS_LOG_INFO(" %s:exit\n", __func__);
 	return NO_ERR;
 }

@@ -985,10 +985,6 @@ struct lcdkit_panel_infos
     u8 reset_pull_high_flag;
     u8 tprst_before_lcdrst;
 
-    /*for tp_reset after lcd reset low*/
-    u8 tp_after_lcd_reset;
-    u8 tp_befor_vsn_low_delay;
-
     /*control reset shutdown timing*/
     u8 reset_shutdown_later;
 

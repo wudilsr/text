@@ -138,7 +138,7 @@
 			vci_regulator_type = <1>;
 			vddio_value = <1800000>;
 			vddio_regulator_type = <1>;
-			ic_type = <2>;
+			ic_type = <6>;
 
 			fts-vdd-supply = <&pm8953_l10>;
 			fts-io-supply = <&pm8953_l6>;
@@ -175,7 +175,7 @@
 			fts_use_pinctrl = <1>;
 			projectid_length_control_flag = <1>;
 			glove_supported = <0>;
-			gesture_supported = <0>;
+			gesture_supported = <1>;
 			fts,need_distinguish_lcd = <1>;
 			fts,fw_only_depend_on_lcd = <0>;
 
@@ -186,9 +186,6 @@
 				/* raw test config */
 				threshold,in_csv_file = <1>;
 				threshold,point_by_point_judge = <1>;
-				row_column_delta_test = <0>;
-				lcd_noise_data_test = <1>;
-				row_column_delta_test_point_by_point = <1>;
 			};
 		};
 
@@ -231,13 +228,13 @@
 
 			tools_support = <1>; /* support GTP tools APK ,0:no support; 1: support*/
 			roi_data_size = <7 7>; /* row and colume*/
-			gesture_supported = <0>;
+			gesture_supported = <1>;
 			roi_supported = <0>;
 			holster_mode_supported = <0>;
 			glove_mode_supported = <0>;
-			easy_wakeup_supported = <0>;
-			charger_supported = <0>;
-			gt1x_test_limit = <0>;
+			easy_wakeup_supported = <1>;
+			charger_supported = <1>;
+			gt1x_test_limit = <1>;
 
 			SENSORID0 {
 				compatible = "gt1x-sensorid-0";

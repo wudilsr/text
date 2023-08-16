@@ -51,14 +51,14 @@
 static struct panel_config dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_panel_data = {
         "lcdkit_dub_l03_va_djn_cpt_ili9881c_6p26_720p_video", "dsi:0:", 
         "djn-cpt-ili9881c-6p26-720p-video", 10, 0, "DISPLAY_1", 
-        0, 668340000, 60, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0 
+        0, 655460000, 60, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0 
 };
 
 /*-----------------------------------------------------------------------*/
 /* Panel resolution                                                      */
 /*-----------------------------------------------------------------------*/
 static struct panel_resolution dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_panel_res = {
-        720, 1520, 84, 76, 8, 0, 20, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 
+        720, 1520, 84, 60, 8, 0, 20, 18, 8, 0, 0, 0, 0, 0, 0, 0, 0, 
         0 
 };
 
@@ -882,32 +882,32 @@ static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd160[] = {
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd161[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA2, 0x29, 0xFF, 0xFF};
+    0xA2, 0x2C, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd162[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA3, 0x17, 0xFF, 0xFF};
+    0xA3, 0x19, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd163[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA4, 0x1E, 0xFF, 0xFF};
+    0xA4, 0x1F, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd164[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA5, 0x34, 0xFF, 0xFF};
+    0xA5, 0x38, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd165[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA6, 0x28, 0xFF, 0xFF};
+    0xA6, 0x2D, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd166[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xA7, 0x24, 0xFF, 0xFF};
+    0xA7, 0x28, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd167[] = {
@@ -982,32 +982,32 @@ static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd180[] = {
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd181[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC2, 0x29, 0xFF, 0xFF};
+    0xC2, 0x2C, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd182[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC3, 0x17, 0xFF, 0xFF};
+    0xC3, 0x19, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd183[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC4, 0x1E, 0xFF, 0xFF};
+    0xC4, 0x1F, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd184[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC5, 0x34, 0xFF, 0xFF};
+    0xC5, 0x38, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd185[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC6, 0x28, 0xFF, 0xFF};
+    0xC6, 0x2D, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd186[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0xC7, 0x24, 0xFF, 0xFF};
+    0xC7, 0x28, 0xFF, 0xFF};
 
 
 static char dub_l03_va_djn_cpt_ili9881c_6p26_720p_video_on_cmd187[] = {

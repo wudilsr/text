@@ -2399,20 +2399,6 @@ bool himax_nc_sense_off(void)
 	uint8_t tmp_addr[4] = {0};
 	uint8_t tmp_data[4] = {0};
 
-	himax_rw_reg_reformat(ADDR_READ_MODE_CHK,tmp_addr);
-	himax_nc_register_read(tmp_addr, FOUR_BYTE_CMD, tmp_data);
-	if (tmp_data[0] != HX_FW_WAKING) {
-		TS_LOG_INFO("No need to set 87!\n");
-		goto DIRCT_ENTER;
-	}
-
-	TS_LOG_INFO("Ready to set fw_addr_ctrl_fw<=fw_data_fw_stop!\n");
-	himax_rw_reg_reformat(HX_FW_ADDR_CTRL_FW, tmp_addr);
-	himax_rw_reg_reformat(HX_FW_DATA_FW_STOP, tmp_data);
-	himax_flash_write_burst(tmp_addr, tmp_data);
-	msleep(HX_SLEEP_100MS);
-
-DIRCT_ENTER:
 	do
 	{
 		/* change for hx83112 start*/

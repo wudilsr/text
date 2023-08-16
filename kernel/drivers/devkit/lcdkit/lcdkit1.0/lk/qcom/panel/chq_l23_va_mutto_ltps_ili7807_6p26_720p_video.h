@@ -51,14 +51,14 @@
 static struct panel_config chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_panel_data = {
         "lcdkit_chq_l23_va_mutto_ltps_ili7807_6p26_720p_video", "dsi:0:", 
         "mutto-ltps-ili7807-6p26-720p-video", 10, 0, "DISPLAY_1", 
-        0, 669960000, 60, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0 
+        0, 607960000, 60, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0 
 };
 
 /*-----------------------------------------------------------------------*/
 /* Panel resolution                                                      */
 /*-----------------------------------------------------------------------*/
 static struct panel_resolution chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_panel_res = {
-        720, 1520, 80, 80, 13, 0, 18, 18, 7, 0, 0, 0, 0, 0, 0, 0, 0, 
+        720, 1520, 43, 43, 8, 0, 12, 20, 4, 0, 0, 0, 0, 0, 0, 0, 0, 
         0 
 };
 
@@ -74,140 +74,58 @@ static struct color_info chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_color = {
 /*-----------------------------------------------------------------------*/
 static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd0[] = {
     0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x78, 0x07, 0x05,
+    0xFF, 0x98, 0x81, 0x01,
    };
 
 
 static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd1[] = {
     0x02, 0x00, 0x39, 0xC0,
-    0x03, 0x40, 0xFF, 0xFF};
+    0x0A, 0x02, 0xFF, 0xFF};
 
 
 static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd2[] = {
+    0x04, 0x00, 0x39, 0xC0,
+    0xFF, 0x98, 0x81, 0x05,
+   };
+
+
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd3[] = {
+    0x02, 0x00, 0x39, 0xC0,
+    0x03, 0x40, 0xFF, 0xFF};
+
+
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd4[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x04, 0x00, 0xFF, 0xFF};
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd3[] = {
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd5[] = {
     0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x78, 0x07, 0x00,
+    0xFF, 0x98, 0x81, 0x00,
    };
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd4[] = {
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd6[] = {
     0x03, 0x00, 0x39, 0xC0,
     0x51, 0x00, 0x00, 0xFF};
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd5[] = {
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd7[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x53, 0x2C, 0xFF, 0xFF};
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd6[] = {
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd8[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x55, 0x00, 0xFF, 0xFF};
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd7[] = {
-    0x03, 0x00, 0x39, 0xC0,
-    0x68, 0x02, 0x01, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd8[] = {
+static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd9[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x11, 0x00, 0xFF, 0xFF};
 
 
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd9[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x78, 0x07, 0x01,
-   };
-
-
 static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd10[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x0A, 0x02, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd11[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x48, 0x22, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd12[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x49, 0x22, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd13[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x52, 0x00, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd14[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x53, 0x00, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd15[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xA3, 0x0A, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd16[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x63, 0x0B, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd17[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x78, 0x07, 0x06,
-   };
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd18[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xB1, 0x00, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd19[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xB2, 0x73, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd20[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xB3, 0x34, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd21[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xA3, 0x2E, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd22[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xA7, 0x02, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd23[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xAE, 0x14, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd24[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0xE3, 0x00, 0xFF, 0xFF};
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd25[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x78, 0x07, 0x00,
-   };
-
-
-static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd26[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x29, 0x00, 0xFF, 0xFF};
 
@@ -223,27 +141,11 @@ static struct mipi_dsi_cmd chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_comm
 {0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd5, 0x00},
 {0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd6, 0x00},
 {0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd7, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd8, 0x64},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd9, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd10, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd11, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd12, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd13, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd14, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd15, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd16, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd17, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd18, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd19, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd20, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd21, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd22, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd23, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd24, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd25, 0x00},
-{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd26, 0x14}
+{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd8, 0x00},
+{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd9, 0x64},
+{0x8, chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_on_cmd10, 0x00}
 };
-#define CHQ_L23_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_ON_COMMAND 27
+#define CHQ_L23_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_ON_COMMAND 11
 
 
 static char chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_off_cmd0[] = {
@@ -292,15 +194,15 @@ static struct lane_configuration chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_l
 /* Panel timing                                                          */
 /*-----------------------------------------------------------------------*/
 static const uint32_t chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_timings[]= {
-        0x21, 0x1E, 0x06, 0x07, 0x04, 0x03, 0x04, 0xA0,
-			0x21, 0x1E, 0x06, 0x07, 0x04, 0x03, 0x04, 0xA0,
-			0x21, 0x1E, 0x06, 0x07, 0x04, 0x03, 0x04, 0xA0,
-			0x21, 0x1E, 0x06, 0x07, 0x04, 0x03, 0x04, 0xA0,
-			0x21, 0x14, 0x06, 0x07, 0x04, 0x03, 0x04, 0xA0 
+        0x20, 0x1C, 0x06, 0x07, 0x03, 0x03, 0x04, 0xA0,
+			0x20, 0x1C, 0x06, 0x07, 0x03, 0x03, 0x04, 0xA0,
+			0x20, 0x1C, 0x06, 0x07, 0x03, 0x03, 0x04, 0xA0,
+			0x20, 0x1C, 0x06, 0x07, 0x03, 0x03, 0x04, 0xA0,
+			0x20, 0x13, 0x05, 0x06, 0x03, 0x03, 0x04, 0xA0 
 };
 
 static struct panel_timing chq_l23_va_mutto_ltps_ili7807_6p26_720p_video_timing_info = {
-        0, 4, 0x0C, 0x27 
+        0, 4, 0x0B, 0x24 
 };
 
 /*-----------------------------------------------------------------------*/

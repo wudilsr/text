@@ -172,16 +172,16 @@
 #include "chq_l22_va_mutto_ltps_ili7807_6p26_720p_video.h"
 #include "chq_l23_va_mutto_ltps_ili7807_6p26_720p_video.h"
 #include "chq_tl10b_va_mutto_ltps_ili7807_6p26_720p_video.h"
-#include "chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video.h"
-#include "chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video.h"
+#include "chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
+#include "chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video.h"
 #include "chq_al00a_va_hsd_hx8394f_5p99_720p_video.h"
 #include "chq_al00b_va_hsd_hx8394f_5p99_720p_video.h"
 #include "chq_al10b_va_hsd_hx8394f_5p99_720p_video.h"
@@ -411,16 +411,16 @@ CHQ_L21B_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL,
 CHQ_L22_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL,
 CHQ_L23_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL,
 CHQ_TL10B_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL,
-CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
-CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL,
+CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
+CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL,
 CHQ_AL00A_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL,
 CHQ_AL00B_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL,
 CHQ_AL10B_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL,
@@ -660,16 +660,16 @@ static struct lcdkit_board_map lcdkit_map[] = {
     {CHQ_L22_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL, 0x06, 8066},
     {CHQ_L23_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL, 0x06, 8065},
     {CHQ_TL10B_VA_MUTTO_LTPS_ILI7807_6P26_720P_VIDEO_PANEL, 0x06, 8072},
-    {CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8070},
-    {CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8071},
-    {CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8080},
-    {CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8069},
-    {CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8064},
-    {CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8068},
-    {CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8067},
-    {CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8066},
-    {CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8065},
-    {CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL, 0x08, 8072},
+    {CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8070},
+    {CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8071},
+    {CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8080},
+    {CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8069},
+    {CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8064},
+    {CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8068},
+    {CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8067},
+    {CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8066},
+    {CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8065},
+    {CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL, 0x08, 8072},
     {CHQ_AL00A_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL, 0x02, 8070},
     {CHQ_AL00B_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL, 0x02, 8071},
     {CHQ_AL10B_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL, 0x02, 8080},
@@ -8775,494 +8775,494 @@ static bool hw_init_panel_data(struct panel_struct *panelstruct,
         lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_tl10b_va_mutto_ltps_ili7807_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL00A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL00A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al00a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al00a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL00B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL00B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al00b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al00b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_AL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_al10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L01_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L01_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L03_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L03_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l03_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l03_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L21A_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L21A_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l21a_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l21a_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L21B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L21B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l21b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l21b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L22_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L22_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l22_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l22_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L23_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_L23_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l23_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_l23_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
-    case CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_PANEL:
-        panelstruct->paneldata    = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_data;
-        panelstruct->panelres     = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_res;
-        panelstruct->color        = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_color;
-        panelstruct->videopanel   = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_video_panel;
-        panelstruct->commandpanel = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_command_panel;
-        panelstruct->state        = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_state;
-        panelstruct->laneconfig   = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_lane_config;
-        panelstruct->paneltiminginfo    = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_timing_info;
-        panelstruct->panelresetseq = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_reset_seq;
-        panelstruct->backlightinfo = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight;
-        if(CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
+    case CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_PANEL:
+        panelstruct->paneldata    = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_data;
+        panelstruct->panelres     = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_res;
+        panelstruct->color        = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_color;
+        panelstruct->videopanel   = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_video_panel;
+        panelstruct->commandpanel = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_command_panel;
+        panelstruct->state        = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_state;
+        panelstruct->laneconfig   = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_lane_config;
+        panelstruct->paneltiminginfo    = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timing_info;
+        panelstruct->panelresetseq = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_reset_seq;
+        panelstruct->backlightinfo = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight;
+        if(CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY == 0)
         {
             panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_bias_ic_array;
+            panelstruct->lcd_bias_ic_info.lcd_bias_ic_list = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_bias_ic_array;
         }
-        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BIAS_IC_ARRAY;
-        if(CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
+        panelstruct->lcd_bias_ic_info.num_of_lcd_bias_ic_list = CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BIAS_IC_ARRAY;
+        if(CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY == 0)
         {
             panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = NULL;
         }
         else
         {
-            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_ic_array;
+            panelstruct->lcd_backlight_ic_info.lcd_backlight_ic_list = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_ic_array;
         }
-        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_TL10B_VA_OFILM_INX_HX8399C_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
-        pinfo->labibb = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_labibb;
-        pinfo->mipi.panel_on_cmds  = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command;
-        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_on_command);
-        pinfo->mipi.panel_off_cmds  = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command;
-        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_off_command);
-        memcpy(phy_db->timing, chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_timings, sizeof(chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_timings));
-        memcpy(panel_regulator_settings, chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting, sizeof(chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_regulator_setting));
-        pinfo->pipe_type = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_mdp_pipe_type;
-        phy_db->pll_type = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_dsi_pll_type;
-        pinfo->mipi.signature = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_mipi_signature;
-        lcdkit_config.lcd_platform   = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_platform_config;
-        lcdkit_config.lcd_misc   = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_misc_info;
-        lcdkit_config.lcd_delay     = &chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_panel_delay_ctrl;
+        panelstruct->lcd_backlight_ic_info.num_of_lcd_backlight_ic_list = CHQ_TL10B_VA_OFILM_LTPS_OTM1901A_6P26_720P_VIDEO_BACKLIGHT_IC_ARRAY;
+        pinfo->labibb = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_labibb;
+        pinfo->mipi.panel_on_cmds  = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command;
+        pinfo->mipi.num_of_panel_on_cmds = ARRAY_SIZE(chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_on_command);
+        pinfo->mipi.panel_off_cmds  = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command;
+        pinfo->mipi.num_of_panel_off_cmds = ARRAY_SIZE(chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_off_command);
+        memcpy(phy_db->timing, chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings, sizeof(chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_timings));
+        memcpy(panel_regulator_settings, chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting, sizeof(chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_regulator_setting));
+        pinfo->pipe_type = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_mdp_pipe_type;
+        phy_db->pll_type = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_dsi_pll_type;
+        pinfo->mipi.signature = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_mipi_signature;
+        lcdkit_config.lcd_platform   = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_platform_config;
+        lcdkit_config.lcd_misc   = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_misc_info;
+        lcdkit_config.lcd_delay     = &chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_panel_delay_ctrl;
         pinfo->mipi.tx_eot_append = lcdkit_config.lcd_misc->tx_eot_append;
         pinfo->mipi.rx_eot_ignore = lcdkit_config.lcd_misc->rx_eot_ignore;
         phy_db->regulator_mode = lcdkit_config.lcd_misc->mipi_regulator_mode;
-        lcdkit_config.backlight_cmds   = chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command;
-        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_tl10b_va_ofilm_inx_hx8399c_6p26_720p_video_backlight_command);
+        lcdkit_config.backlight_cmds   = chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command;
+        lcdkit_config.num_of_backlight_cmds   = ARRAY_SIZE(chq_tl10b_va_ofilm_ltps_otm1901a_6p26_720p_video_backlight_command);
         break;
 
     case CHQ_AL00A_VA_HSD_HX8394F_5P99_720P_VIDEO_PANEL:

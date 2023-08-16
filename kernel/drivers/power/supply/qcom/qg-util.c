@@ -309,13 +309,10 @@ int qg_write_monotonic_soc(struct qpnp_qg *chip, int msoc)
 	return rc;
 }
 
-#define WA_BATT_TEMP_PRE	250
-#define WA_BATT_TEMP_THR	980
 int qg_get_battery_temp(struct qpnp_qg *chip, int *temp)
 {
 	int rc = 0;
 	struct qpnp_vadc_result result;
-	static int pre_temp = WA_BATT_TEMP_PRE;
 
 	if (chip->battery_missing) {
 		*temp = 250;
@@ -332,12 +329,6 @@ int qg_get_battery_temp(struct qpnp_qg *chip, int *temp)
 			result.physical, result.measurement);
 
 	*temp = (int)result.physical;
-	if(*temp < WA_BATT_TEMP_THR){
-		pre_temp = *temp;
-	}else{
-		pr_info("enter WA and temp = %d\n",*temp);
-		*temp = pre_temp;
-	}
 
 	return rc;
 }

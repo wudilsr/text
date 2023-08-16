@@ -59,8 +59,7 @@ static char* tp_reset_pull_h[] = {
 "ofilm_td4320_6p5_1080p_video",
 "tm_td4320_6p5_1080p_video",
 "tm_td4330_6p3_1080p_video",
-"boe_td4330_6p5_1080p_video",
-"ofilm_td4330_6p5_1080p_cmd"
+"boe_td4330_6p5_1080p_video"
 };
 uint32_t g_panel_vender_id = 0xFFFF;
 

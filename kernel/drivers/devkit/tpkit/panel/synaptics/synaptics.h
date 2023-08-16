@@ -145,7 +145,7 @@ enum FW_uptate_state
 
 #define F35_WRITE_LENGTH_MAX 65535
 #define SYNAPTICS_RMI4_F12_QUERY_8_MAX  6
-#define I2C_WRITE_DATA_LIMIT 6000  //limit length of synaptics_rmi4_i2c_write
+
 struct synaptics_grip_data {
     u8 ewx; // Width of upper and lower edges
     u8 ewy; // Height of left and right edges

@@ -2519,7 +2519,6 @@ use_pon_ocv:
 		}
 		ocv_uv = CAP(QG_MIN_OCV_UV, QG_MAX_OCV_UV, ocv_uv);
 		rc = lookup_soc_ocv(&soc, ocv_uv, batt_temp, false);
-
 		if (rc < 0) {
 			pr_err("Failed to lookup SOC@PON rc=%d\n", rc);
 			goto done;

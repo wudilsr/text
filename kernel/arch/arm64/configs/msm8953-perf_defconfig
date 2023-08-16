@@ -777,6 +777,3 @@ CONFIG_HUAWEI_PROC_CHECK_ROOT=y
 CONFIG_HW_ROOT_SCAN=y
 
 CONFIG_HW_SYS_SYNC=y
-CONFIG_HW_SYN_LINEAR_RETRY=y
-# Disable hw_tp_common and using tpkit, the config is y by default
-CONFIG_HUAWEI_TOUCH_SCREEN=n

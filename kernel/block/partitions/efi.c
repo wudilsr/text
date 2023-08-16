@@ -618,8 +618,8 @@ static int find_valid_gpt(struct parsed_partitions *state, gpt_header **gpt,
 		good_pmbr = is_pmbr_valid(legacymbr, total_sectors);
 		kfree(legacymbr);
 
-	//	if (!good_pmbr)
-		//	goto fail;     /*mbr damage workaround*/
+		if (!good_pmbr)
+			goto fail;
 
 		pr_debug("Device has a %s MBR\n",
 			 good_pmbr == GPT_MBR_PROTECTIVE ?
@@ -632,7 +632,6 @@ static int find_valid_gpt(struct parsed_partitions *state, gpt_header **gpt,
 		good_agpt = is_gpt_valid(state,
 					 le64_to_cpu(pgpt->alternate_lba),
 					 &agpt, &aptes);
-        force_gpt = 1;      /*mbr damage workaround,enable use secondary gpt when primary gpt damage */
         if (!good_agpt && force_gpt)
                 good_agpt = is_gpt_valid(state, lastlba, &agpt, &aptes);
 

@@ -1158,54 +1158,6 @@ static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd215[] = {
 
 
 static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd216[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x98, 0x81, 0x04,
-   };
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd217[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x00, 0x00, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd218[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x35, 0x1F, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd219[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x3A, 0x24, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd220[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x32, 0x05, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd221[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x33, 0x14, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd222[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x98, 0x81, 0x01,
-   };
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd223[] = {
-    0x02, 0x00, 0x39, 0xC0,
-    0x63, 0x00, 0xFF, 0xFF};
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd224[] = {
-    0x04, 0x00, 0x39, 0xC0,
-    0xFF, 0x98, 0x81, 0x00,
-   };
-
-
-static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd225[] = {
     0x02, 0x00, 0x39, 0xC0,
     0x29, 0x00, 0xFF, 0xFF};
 
@@ -1429,18 +1381,9 @@ static struct mipi_dsi_cmd chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_comm
 {0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd213, 0x00},
 {0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd214, 0x00},
 {0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd215, 0x3C},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd216, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd217, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd218, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd219, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd220, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd221, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd222, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd223, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd224, 0x00},
-{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd225, 0x14}
+{0x8, chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_on_cmd216, 0x14}
 };
-#define CHQ_TL10B_VA_TXD_INX_ILI9881C_6P26_720P_VIDEO_ON_COMMAND 226
+#define CHQ_TL10B_VA_TXD_INX_ILI9881C_6P26_720P_VIDEO_ON_COMMAND 217
 
 
 static char chq_tl10b_va_txd_inx_ili9881c_6p26_720p_video_off_cmd0[] = {

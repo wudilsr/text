@@ -218,9 +218,6 @@ void tcp_time_wait(struct sock *sk, int state, int timeo);
 /* TCP thin-stream limits */
 #define TCP_THIN_LINEAR_RETRIES 6       /* After 6 linear retries, do exp. backoff */
 
-#ifdef CONFIG_HW_SYN_LINEAR_RETRY
-#define TCP_SYN_SENT_LINEAR_RETRIES   4   /* After 4 linear retries, do exp. backoff */
-#endif
 /* TCP initial congestion window as per rfc6928 */
 #define TCP_INIT_CWND		10
 

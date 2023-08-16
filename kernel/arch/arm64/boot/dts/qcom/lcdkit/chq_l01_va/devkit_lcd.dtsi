@@ -9,6 +9,6 @@
 #include "chq_l01_va_hsd_hx8394f_5p99_720p_video.dtsi"
 #include "chq_l01_va_mutto_ltps_ili7807_6p26_720p_video.dtsi"
 #include "chq_l01_va_ofilm_hsd_hx8394f_6p26_720p_video.dtsi"
-#include "chq_l01_va_ofilm_inx_hx8399c_6p26_720p_video.dtsi"
+#include "chq_l01_va_ofilm_ltps_otm1901a_6p26_720p_video.dtsi"
 #include "chq_l01_va_txd_ili9881c_5p99_720p_video.dtsi"
 #include "chq_l01_va_txd_inx_ili9881c_6p26_720p_video.dtsi"

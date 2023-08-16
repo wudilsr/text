@@ -4317,12 +4317,6 @@ static ssize_t mdss_mdp_misr_store(struct device *dev,
 		return rc;
 	}
 
-	if (mdss_fb_is_power_off(mfd)) {
-		pr_err("display interface is in off state fb:%d\n", mfd->index);
-		rc = -EINVAL;
-		return rc;
-	}
-
 	rc = kstrtoint(buf, 10, &enable_misr);
 	if (rc) {
 		pr_err("kstrtoint failed. rc=%d\n", rc);
