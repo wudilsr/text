@@ -1,0 +1,89 @@
+#include "sdm632.dtsi"
+#include "sdm450-pmi632.dtsi"
+#include "sdm450-qrd-sku4.dtsi"
+
+&dsi_ili9881h_hlt_video {
+	qcom,mdss-dsi-panel-timings-phy-v2 = [1e 1c 04 06 02 00 03 04
+	1e 1c 04 06 02 00 03 04
+	1e 1c 04 06 02 00 03 04
+	1e 1c 04 06 02 00 03 04
+	1e 0f 04 05 02 00 03 04];
+	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_pwm";
+	qcom,mdss-dsi-bl-pmic-pwm-frequency = <100>;
+	qcom,mdss-dsi-bl-pmic-bank-select = <0>;
+	qcom,mdss-dsi-pwm-gpio = <&pm8953_gpios 8 0>;
+	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
+};
+
+ /{
+     huawei_charger: qcom,huawei_charger{
+         compatible = "huawei,charger";
+         status = "okay";
+         powerdown_anim_horizontal = "1";
+         huawei,allow_converse;
+
+     };
+ };
+
+&tlmm {
+    usb_short_curcuit_default: usb_short_curcuit_default {
+	mux {
+		pins = "gpio141";
+		function = "gpio";
+	};
+	config {
+		pins = "gpio141";
+		drive-strength = <2>;
+		bias-disable;
+	};
+    };
+};
+/{
+    usb_short_circuit_protect: usb_short_circuit_protect{
+	compatible = "huawei,usb_short_circuit_protect";
+	pinctrl-names = "default";
+	pinctrl-0 = <&usb_short_curcuit_default>;
+	gpio_usb_short_circuit_protect = <&tlmm 141 0x00>;
+	qcom,uscp-vadc = <&hw_uscp_adc>;
+	no_need_uscp = <1>;
+	dmd_hiz_enable = <1>;
+	type_delay_time = <3000>;
+	uscp_threshold_tusb = <40>;
+	open_mosfet_temp = <19>;
+	close_mosfet_temp = <8>;
+	open_hiz_temp = <13>;
+	interval_switch_temp = <7>;
+	status = "ok";
+    };
+};
+/{
+    hw_uscp_adc: hw_uscp_adc {
+	compatible="huawei-vadc";
+	vadc-name="uscp";
+	qcom,uscp-vadc=<&pmi632_vadc>;
+	channel = <0x52>;
+	status="okay";
+    };
+    huawei_otg_adc: huawei_otg_adc {
+        compatible="huawei-vadc";
+        vadc-name="otg";
+        qcom,otg-vadc=<&pmi632_vadc>;
+        channel = <0x13>;
+        status="disabled";
+    };
+};
+
+ /{
+     huawei_fuelguage: qcom,huawei_fuelguage{
+         compatible = "huawei,fuelguage";
+         fuelguage_type = "bms";
+         status = "okay";
+     };
+ };
+
+ / {
+	huawei_otg_dual_role:huawei_otg_dual_role{
+		compatible = "huawei,otg-dual-role";
+		status = "okay";
+	};
+};

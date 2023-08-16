@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2018, 2018 Huawei Ltd. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+/dts-v1/;
+
+#include "huawei_sdm632_base.dtsi"
+#include "huawei_sdm632_bkk_l23hn_vb/huawei.dtsi"
+#include "lcdkit/bkk_l23hn_vb/devkit_lcd.dtsi"
+#include "lcdkit/default/devkit_lcd.dtsi"
+
+/ {
+	model = "Huawei Technologies, Inc. BKK-L23_VB";
+	compatible = "qcom,sdm632-qrd", "qcom,sdm632", "qcom,qrd";
+	qcom,board-id = <8019 1>;
+	qcom,pmic-id = <0x010016 0x25 0x0 0x0>;
+	huawei,modem_id = <0xF5B40103 0x0>;
+};

@@ -1,0 +1,10 @@
+/{
+		huawei_fac_info {
+		compatible = "huawei,hw_fac_info";
+		fac,product_name = "DUB-LX1";
+		fac,hardware_ver = "HL3DUBM";
+		fac,software_ver = "DUB_LX1_VA";
+		fac,simcard_adapt = "support";
+		status = "ok";
+	};
+};

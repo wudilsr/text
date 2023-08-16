@@ -1,0 +1,298 @@
+/* touch panel config */
+&tlmm {
+		/* add pingrp for touchscreen */
+		pmx_ts_int_active {
+			ts_int_active: ts_int_active {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					/delete-property/ bias-pull-up;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_int_suspend {
+			ts_int_suspend: ts_int_suspend {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_reset_active {
+			ts_reset_active: ts_reset_active {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <8>;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_reset_suspend {
+			ts_reset_suspend: ts_reset_suspend {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_release {
+			ts_release: ts_release {
+				mux {
+					pins = "gpio65", "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65", "gpio64";
+					drive-strength = <2>;
+					bias-pull-down;
+				};
+			};
+		};
+};
+&soc {
+	i2c@78b7000{
+		status = "ok";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		qcom,clk-freq-out = <400000>;
+	};
+	ts_kit {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "huawei,ts_kit";
+		bus_type = "i2c";
+		bus_id = <3>;
+		product = "bangkok";
+		reset_gpio = <&tlmm 64 0x00>;
+		irq_gpio = <&tlmm 65 0x2008>;
+		fpga_flag = <0>;
+		ilitek@41 {
+			status = "ok";
+			compatible = "ilitek,ts_kit";
+			ic_type = <2>;
+			chip_id = <0x9881>;
+			slave_address = <0x41>;
+
+			algo_id = <1>;
+			is_in_cell = <1>;
+			irq_config = <3>;
+			use_ic_res = <1>;
+
+			x_min = <0>;
+			x_max = <720>;
+			y_min = <0>;
+			y_max = <1520>;
+			finger_nums = <10>;
+
+			support_roi = <1>;
+			support_gesture = <1>;
+			support_pressure = <0>;
+			support_get_tp_color = <1>;
+
+			use_lcdkit_power_notify = <1>;
+			project_id_length_control = <1>;
+
+			is_ic_rawdata_proc_printf = <1>;
+			only_open_once_captest_threshold = <1>;
+			tp_test_type = "Normalize_type:judge_last_result";
+
+			pinctrl-names = "active","idle","default";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+			pinctrl-2 = <&ts_release>;
+
+			bakk79260 {
+				producer = "hlt";
+			};
+		};
+		focaltech@38 {
+			compatible = "fts";
+			ic_type = <5>; //8006U
+			need_wd_check_status = <0>;
+			x_max = <720>;
+			y_max = <1520>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+			unite_cap_test_interface = <1>;
+			report_rate_test = <0>;
+			vci_gpio_type = <0>;
+			vci_regulator_type = <1>;
+			vddio_gpio_type = <0>;
+			vddio_regulator_type = <1>;
+			slave_address = <0x38>;
+			chip_id = <0x88>; 			//8835
+			hard_reset_delay = <200>;
+			erase_min_delay = <1350>;
+			calc_crc_delay = <300>;
+			reboot_delay = <300>;
+			erase_query_delay = <50>;
+			write_flash_query_times = <30>;
+			read_ecc_query_times = <100>;
+			erase_flash_query_times = <15>;
+			upgrade_loop_times = <5>;
+			glove_supported = <1>;
+			glove_switch_addr = <0xC0>;
+			holster_supported = <1>;
+			holster_switch_addr = <0xC1>;
+			roi_supported = <1>;
+			roi_switch_addr = <0x9B>;
+			/*fts-vdd-supply = <&ldo17>;*/
+			/*fts-io-supply = <&ldo4>;*/
+			irq_config = <3>; //failing
+			algo_id = <1>;
+			pram_projectid_addr = <0x1FA0>;
+			projectid_length_control_flag = <1>;
+
+			bakk80260 {
+				producer = "hlt";
+				ic_type = <5>;
+				//project_atm = <1>;
+				compatible = "fts-bakk80260";
+				threshold,in_csv_file = <1>;
+				threshold,point_by_point_judge = <1>;
+				threshold,raw_data_min = <0>;
+				threshold,raw_data_max = <99999>;
+				threshold,cb_test_min = <0>;
+				threshold,cb_test_max = <9999>;
+				threshold,scap_raw_data_min = <0>;
+				threshold,scap_raw_data_max = <90000>;
+				threshold,short_circuit_min = <0>;
+				//threshold,open_test_cb_min = <100>;
+				threshold,lcd_noise_max = <100>;
+			};
+
+
+		};
+		novatek@62 {
+			compatible = "novatek";
+			ic_type = <2>;
+			need_wd_check_status = <0>;
+			x_max = <720>;
+			y_max = <1520>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+			vci_gpio_type = <0>;
+			vci_regulator_type = <0>;
+			vddio_gpio_type = <0>;
+			vddio_regulator_type = <0>;
+			slave_address = <0x62>;
+			power_sleep_mode = <1>;
+			pinctrl-names = "default","idle";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+			irq_config = <3>;
+			algo_id = <1>;
+			noise_test_frame = <10>;
+			open_test_by_fw = <1>;
+			nvt_chip_id_partone = <0x03>;
+			nvt_chip_id_parttwo = <0x65>;
+			nvt_chip_id_partthree = <0x25>;
+			project_id_flash_address = <0x1E000>;
+			gesture_supported = <1>;
+			gesture_module = <1>;
+			roi_supported = <1>;
+			use_pinctrl=<1>;
+			rawdate_pointer_to_pointer = <1>;
+			NT36525 {
+				compatible = "NT36525";
+				EVENT_BUF_ADDR           = <0x11A00>;
+				RAW_PIPE0_ADDR           = <0x10000>;
+				RAW_PIPE1_ADDR           = <0x12000>;
+				BASELINE_ADDR            = <0x10B08>;
+				BASELINE_BTN_ADDR        = <0x12B08>;
+				DIFF_PIPE0_ADDR          = <0x1064C>;
+				DIFF_PIPE1_ADDR          = <0x1264C>;
+				RAW_BTN_PIPE0_ADDR       = <0x10634>;
+				RAW_BTN_PIPE1_ADDR       = <0x12634>;
+				DIFF_BTN_PIPE0_ADDR      = <0x10AFC>;
+				DIFF_BTN_PIPE1_ADDR      = <0x12AFC>;
+				READ_FLASH_CHECKSUM_ADDR = <0x14000>;
+				RW_FLASH_DATA_ADDR       = <0x14002>;
+			};
+			bakk52120 {
+				producer = "cmi";
+				compatible = "bakk52120";
+				glove_mode_supported = <1>;
+				glove_switch_addr = <0x001F>;
+				roi_supported = <1>;
+				holster_mode_supported = <0>;
+				touch_switch_flag = <0>;
+				criteria_threshold_flag = <1>;
+				nvttddi_channel_flag = <1>;
+				IC_X_CFG_SIZE = <18>;
+				IC_Y_CFG_SIZE = <32>;
+				NvtTddi_X_Channel = <18>;
+				NvtTddi_Y_Channel = <32>;
+				mADCOper_Cnt = <2>;
+				huawei,csvfile_use_system=<2>;
+				huawei,test_capacitance_via_csvfile=<1>;
+				tp_cap_test_type = "Normalize_type:judge_last_result";
+				NVT_TDDI_AIN_X = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17>;
+				NVT_TDDI_AIN_Y = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31>;
+			};
+		};
+		himax@48 {
+			status = "ok";
+			compatible = "himax";
+			reg = <0x48>;
+			ic_type = <2>;
+			chip_name = "hx83112a";
+			himax,rst_support = <1>;
+			himax,glove_supported = <1>;
+			himax,gesture_supported = <1>;
+			himax,re_send_cmd_support = <1>;
+			himax,panel-coords = <0 720 0 1520>;
+			himax,display-coords = <0 720 0 1520>;
+			hx83112a{
+				compatible = "hx83112a";
+				himax,reset_gpio = <&tlmm 64 0x00>;
+				himax,irq_config = <3>;/* 0 - LOW LEVEL  1 - HIGH LEVEL  2 - RAISE EDGE  3 - FALL EDGE*/
+				himax,id-name = <0x83 0x11 0x2A>;/* 131 16 43 */
+				himax,id-addr = <0xD0 0x00 0x00 0x90>;/*208 0 0 144 */
+				himax,flash-addr = <49157 1 49158 1 49408 1 49409 1 49154 1 49155 1 49156 1>;/* ADDR LENTH */
+				himax,p2p-test-en = <1>;
+			};
+			bakk59000{
+				compatible = "bakk59000";
+				module = "ofilm";
+				tp_test_type = "Normalize_type:judge_last_result";
+				himax,panel-coords = <0 720 0 1520>;
+				himax,display-coords = <0 720 0 1520>;
+				himax,rawdata_timeout = <5>;
+				himax,trx_delta_test_support = <1>;
+				himax,test_capacitance_via_csvfile = <1>;
+				himax,csvfile_use_system = <1>;/*1 - PRODUCT   2 - ODM*/
+			};
+		};
+	};
+};

@@ -1,0 +1,9 @@
+/{
+		huawei_fac_info {
+		compatible = "huawei,hw_fac_info";
+		fac,product_name = "DUB-TL00";
+		fac,hardware_ver = "HL1DUBAIM";
+		fac,software_ver = "DUB_TL10B_VA";
+		status = "ok";
+	};
+};

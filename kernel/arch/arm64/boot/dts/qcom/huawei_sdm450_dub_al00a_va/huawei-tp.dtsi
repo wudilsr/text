@@ -1,0 +1,363 @@
+/* touch panel config */
+&tlmm {
+		/* add pingrp for touchscreen */
+		pmx_ts_int_active {
+			ts_int_active: ts_int_active {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					/delete-property/ bias-pull-up;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_int_suspend {
+			ts_int_suspend: ts_int_suspend {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_reset_active {
+			ts_reset_active: ts_reset_active {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <8>;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_reset_suspend {
+			ts_reset_suspend: ts_reset_suspend {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_release {
+			ts_release: ts_release {
+				mux {
+					pins = "gpio65", "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65", "gpio64";
+					drive-strength = <2>;
+					bias-pull-down;
+				};
+			};
+		};
+		ts_int_high {
+			ts_int_high: ts_int_high {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					bias-disable;
+					output-high;
+				};
+			};
+		};
+		ts_int_low {
+			ts_int_low: ts_int_low {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					bias-pull-down;
+					output-low;
+				};
+			};
+		};
+};
+&soc {
+	i2c@78b7000{
+		status = "ok";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		qcom,clk-freq-out = <400000>;
+	};
+	ts_kit {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "huawei,ts_kit";
+		bus_type = "i2c";
+		bus_id = <3>;
+		product = "dubai";
+		reset_gpio = <&tlmm 64 0x00>;
+		irq_gpio = <&tlmm 65 0x2008>;
+		fpga_flag = <0>;
+		focaltech@38 {
+			compatible = "fts";
+
+			/* ic config */
+			reboot_delay = <300>;
+			slave_address = <0x38>;
+			power_self_ctrl = <0>;
+			reset_self_ctrl = <1>;
+			vci_value = <3000000>;
+			vci_regulator_type = <1>;
+			vddio_value = <1800000>;
+			vddio_regulator_type = <1>;
+			ic_type = <6>;
+
+			fts-vdd-supply = <&pm8953_l10>;
+			fts-io-supply = <&pm8953_l6>;
+
+			pinctrl-names = "default", "idle";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+
+			/* report config */
+			algo_id = <1>;
+			x_max = <720>;
+			y_max = <1520>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+
+			/* delay config*/
+			hard_reset_delay = <200>;
+			erase_min_delay = <1350>;
+			calc_crc_delay = <300>;
+			erase_query_delay = <50>;
+			write_flash_query_times = <30>;
+			read_ecc_query_times = <100>;
+			erase_flash_query_times = <15>;
+			upgrade_loop_times = <5>;
+
+			irq_config = <3>;
+			pram_projectid_addr = <0xd7a0>;
+			support_get_tp_color = <0>;
+			tp_test_type = "Normalize_type:judge_last_result";
+			is_in_cell = <0>;
+			need_wd_check_status = <0>;
+			check_status_watchdog_timeout = <2000>;
+			only_open_once_captest_threshold = <1>;
+			fts_use_pinctrl = <1>;
+			projectid_length_control_flag = <1>;
+			glove_supported = <0>;
+			gesture_supported = <1>;
+
+			dbai53240 {
+				compatible = "fts-dbai53240";
+				producer = "djn";
+				ic_type = <6>;
+
+				/* raw test config */
+				threshold,in_csv_file = <1>;
+				threshold,point_by_point_judge = <1>;
+			};
+
+		};
+
+		mstar_ts@26 {
+			compatible = "mstar";
+			slave_address = <0x26>;
+			mstar_irq_config = <3>;
+			algo_id = <1>;
+			ic_type = <0x2846>;
+
+			x_max = <720>;
+			y_max = <1520>;
+
+			/*power config*/
+			power_self_ctrl = <0>; /*0-Power is controlled by LCD, 1-Power is self controlled*/
+
+			vci_gpio_type = <2>; /*0 - gpio control  1 - ldo  2 - not used*/
+			vci_power_type = <1>; /*0 - gpio control  1 - ldo  2 - boost & gpio*/
+			vci_ldo_value = <3000000>;
+			mstar_vci-supply = <&pm8953_l10>;
+
+			vddio_gpio_type = <2>; /*0 - gpio control  1 - ldo  2 - not used*/
+			vddio_power_type = <1>; /*0 - gpio control  1 - ldo  2 - not used*/
+			vddio_ldo_need_set = <1>;
+			vddio_ldo_value = <1800000>;
+			mstar_vddio-supply = <&pm8953_l6>;
+
+			need_wd_check_status = <1>;
+			check_status_watchdog_timeout = <3000>;
+			support_get_tp_color = <0>;
+			gesture_supported = <1>;
+
+			rawdata_timeout = <6>;
+			tp_test_type = "Normalize_type:judge_last_result";
+
+			mstar,pinctrl_set = <1>;
+			pinctrl-names = "default", "idle";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+
+			dbai82260 {
+				producer = "hlt";
+				compatible = "mstar-dbai82260";
+			};
+		};
+
+		himax@48 {
+			status = "ok";
+			compatible = "himax";
+			reg = <0x48>;
+			ic_type = <0>;
+			himax,rawdata_timeout = <5>;
+			himax,irq_config = <3>;/* 0 - LOW LEVEL  1 - HIGH LEVEL  2 - RAISE EDGE  3 - FALL EDGE*/
+			chip_name = "hx8527e";
+			tp_test_type = "Normalize_type:judge_last_result";
+			support_get_tp_color = <0>;
+			himax,power_support = <0>;
+			himax,power_type_sel = <1>;/* 0 - GPIO	1 - REGULATOR */
+			vdda-supply = <&pm8953_l10>;
+			vddd-supply = <&pm8953_l6>;
+			himax,panel-coords = <0 720 0 1520>;
+			himax,display-coords = <0 720 0 1520>;
+			himax,p2p-test-en = <1>;
+			sensor_id_11 {
+				compatible = "sensor_id_11";
+				project_id = "dbai83000";
+				module = "ofilm";
+			};
+		};
+
+		goodix@5d {
+			compatible = "goodix";
+			ic_type = <0>;
+			slave_address = <0x5d>;
+
+			/* config */
+			irq_config = <2>;
+			algo_id = <2>;
+			need_wd_check_status = <1>;
+			check_status_watchdog_timeout = <2000>;
+			gesture_supported = <1>;
+			tp_test_type = "Normalize_type:judge_last_result";
+			huawei,test_capacitance_via_csvfile = <1>;
+			huawei,csvfile_use_product_system = <1>;
+
+			support_get_tp_color = <0>;
+			pram_projectid_addr = <0x81a0>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+			roi_data_size = <7 7>;
+			tools_support;
+			only_open_once_captest_threshold = <1>;
+			load_cfg_via_project_id = <1>;
+
+			product_id = "GT917D";
+
+			pinctrl-names = "pmx_ts_active","pmx_ts_suspend","pmx_ts_release","ts_int_high","ts_int_low";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+			pinctrl-2 = <&ts_release>;
+			pinctrl-3 = <&ts_int_high>;
+			pinctrl-4 = <&ts_int_low>;
+			SENSORID0 {
+				compatible = "goodix-sensorid-0";
+				producer = "each";
+				x_max_mt = <720>;
+				y_max_mt = <1520>;
+
+				dbai45230 {
+					normal_config = [
+					41 D0 02 F0 05 0A FC 32 11 8F 32
+					0F 5F 46 03 05 00 00 92 6B 01 12
+					05 16 19 1F 14 C7 27 EE 38 3A B8
+					08 B8 08 00 C3 33 91 00 00 00 00
+					00 02 40 08 0A 00 1A 28 50 8A 90
+					64 19 32 00 04 A9 2A 00 95 31 00
+					87 38 00 7C 41 00 72 4A 00 72 00
+					00 00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 02 00 00 0F
+					32 00 03 00 00 32 06 55 00 00 00
+					00 41 00 1B 1A 19 18 17 16 15 14
+					13 12 11 10 0F 0E 01 02 03 04 05
+					06 07 08 09 0A 0B 0C 0D FF FF 00
+					02 04 05 06 08 0A 1E 1F 20 22 24
+					29 2A FF FF FF 8C 31 3C 3C 00 8C
+					70 12 00 32 4B 5A 19 1E 32 0F 00
+					06 66 66 0F 10 8B 84 85 00 00 00
+					00 00 00 00 00 00 00 00 00 32 32
+					00 00 0F 14 00 37 55 00 78 78 95
+					32 55 02 3C 43 E0 04 5A 32 08 00
+					1E 03 0A 41 00 00 33 01];
+
+					glove_config = [];
+					holster_config = [];
+					tptest_config = [
+					00 D0 02 F0 05 0A 0D 00 01 08
+					28 05 50 32 03 05 00 00 00 00
+					00 00 00 00 00 00 00 87 27 EE
+					58 56 31 0D 00 00 04 DA 03 1D
+					00 00 00 00 00 03 00 32 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 1B 1A 19 18 17 16 15
+					14 13 12 11 10 0F 0E 01 02 03
+					04 05 06 07 08 09 0A 0B 0C 0D
+					FF FF 00 02 04 05 06 08 0A 1E
+					1F 20 22 24 29 2A FF FF FF FF
+					FF FF FF FF FF FF FF FF FF FF
+					FF FF FF FF FF FF FF FF FF FF
+					FF FF FF FF 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 00 00 00 00
+					00 00 00 00 00 00 32 01];
+				};
+			};
+		};
+	};
+};
+&rpm_bus {
+	rpm-regulator-ldoa6 {
+		pm8953_l6: regulator-l6 {
+			regulator-always-on;
+		};
+	};
+	rpm-regulator-ldoa10 {
+		pm8953_l10: regulator-l10 {
+			regulator-always-on;
+		};
+	};
+};

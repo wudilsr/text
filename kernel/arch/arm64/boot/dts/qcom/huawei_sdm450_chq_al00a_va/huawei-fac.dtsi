@@ -1,0 +1,9 @@
+/{
+		huawei_fac_info {
+		compatible = "huawei,hw_fac_info";
+		fac,product_name = "CHQ-AL00";
+		fac,hardware_ver = "HL1CHQM";
+		fac,software_ver = "CHQ_AL00A_VA";
+		status = "ok";
+	};
+};

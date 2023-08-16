@@ -1,0 +1,18 @@
+
+/ {
+    huawei_audio_info {
+        compatible = "hw,hw_audio_info";
+        product-identifier = "dubai";
+        builtin-master-mic-exist;
+        builtin-second-mic-exist;
+        hand_held_dual_mic_strategy;
+        loud_speaker_second_mic_strategy;
+        cust_name = "audio_custom_v2";
+        voice-vol-level = <10>;
+        status = "ok";
+    };
+};
+
+&pmic_analog_codec {
+    qcom,cdc-boost-voltage = <5300>;
+};

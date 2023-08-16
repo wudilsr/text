@@ -1,0 +1,3 @@
+#include "huawei-sensors.dtsi"
+#include "huawei-battery.dtsi"
+#include "huawei-usb.dtsi"

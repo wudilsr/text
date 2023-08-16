@@ -1,0 +1,279 @@
+/* touch panel config */
+&tlmm {
+		/* add pingrp for touchscreen */
+		pmx_ts_int_active {
+			ts_int_active: ts_int_active {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					/delete-property/ bias-pull-up;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_int_suspend {
+			ts_int_suspend: ts_int_suspend {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-disable;
+				};
+			};
+		};
+
+		pmx_ts_reset_active {
+			ts_reset_active: ts_reset_active {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <8>;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_reset_suspend {
+			ts_reset_suspend: ts_reset_suspend {
+				mux {
+					pins = "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio64";
+					drive-strength = <2>;
+					/delete-property/ bias-pull-down;
+					bias-pull-up;
+				};
+			};
+		};
+
+		pmx_ts_release {
+			ts_release: ts_release {
+				mux {
+					pins = "gpio65", "gpio64";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65", "gpio64";
+					drive-strength = <2>;
+					bias-pull-down;
+				};
+			};
+		};
+		ts_int_high {
+			ts_int_high: ts_int_high {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					bias-disable;
+					output-high;
+				};
+			};
+		};
+		ts_int_low {
+			ts_int_low: ts_int_low {
+				mux {
+					pins = "gpio65";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio65";
+					drive-strength = <8>;
+					bias-pull-down;
+					output-low;
+				};
+			};
+		};
+};
+&soc {
+	i2c@78b7000{
+		status = "ok";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		qcom,clk-freq-out = <400000>;
+	};
+	ts_kit {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "huawei,ts_kit";
+		bus_type = "i2c";
+		bus_id = <3>;
+		product = "dubai";
+		reset_gpio = <&tlmm 64 0x00>;
+		irq_gpio = <&tlmm 65 0x2008>;
+		fpga_flag = <0>;
+		focaltech@38 {
+			compatible = "fts";
+
+			/* ic config */
+			reboot_delay = <300>;
+			slave_address = <0x38>;
+			power_self_ctrl = <0>;
+			reset_self_ctrl = <1>;
+			vci_value = <3000000>;
+			vci_regulator_type = <1>;
+			vddio_value = <1800000>;
+			vddio_regulator_type = <1>;
+			ic_type = <2>;
+
+			fts-vdd-supply = <&pm8953_l10>;
+			fts-io-supply = <&pm8953_l6>;
+
+			pinctrl-names = "default", "idle";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+
+			/* report config */
+			algo_id = <1>;
+			x_max = <720>;
+			y_max = <1520>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+
+			/* delay config*/
+			hard_reset_delay = <200>;
+			erase_min_delay = <1350>;
+			calc_crc_delay = <300>;
+			erase_query_delay = <50>;
+			write_flash_query_times = <30>;
+			read_ecc_query_times = <100>;
+			erase_flash_query_times = <15>;
+			upgrade_loop_times = <5>;
+
+			irq_config = <3>;
+			pram_projectid_addr = <0xd7a0>;
+			support_get_tp_color = <0>;
+			tp_test_type = "Normalize_type:judge_last_result";
+			is_in_cell = <0>;
+			need_wd_check_status = <0>;
+			check_status_watchdog_timeout = <2000>;
+			only_open_once_captest_threshold = <1>;
+			fts_use_pinctrl = <1>;
+			projectid_length_control_flag = <1>;
+			glove_supported = <0>;
+			gesture_supported = <0>;
+			fts,need_distinguish_lcd = <1>;
+			fts,fw_only_depend_on_lcd = <0>;
+
+			duba53010 {
+				compatible = "fts-duba53010";
+				producer = "eely";
+				ic_type = <2>;
+				/* raw test config */
+				threshold,in_csv_file = <1>;
+				threshold,point_by_point_judge = <1>;
+				row_column_delta_test = <0>;
+				lcd_noise_data_test = <1>;
+				row_column_delta_test_point_by_point = <1>;
+			};
+		};
+
+		goodix_kit: ts_kit@14 {
+			compatible = "gt1x";
+			ic_type = <0>; /* 0: 9PT, 1: 9P*/
+			slave_address = <0x14>;
+			irq_config = <3>;/* 0 - LOW LEVEL  1 - HIGH LEVEL  2 - RAISE EDGE  3 - FALL EDGE*/
+			support_get_tp_color = <0>;
+			algo_id = <1>;
+
+			qcom_adapter_flag = <1>;
+			only_open_once_captest_threshold = <1>;
+			fw_only_depend_on_lcd = <1>;
+
+			x_max = <720>;
+			y_max = <1520>;
+			x_max_mt = <720>;
+			y_max_mt = <1520>;
+			chip_name = "1158"; /* GT1151Q */
+			module_vendor = "ofilm";
+			project_id = "duba54240";
+
+			tp_test_type = "Normalize_type:judge_last_result";
+			pinctrl-names = "pmx_ts_active","pmx_ts_suspend","pmx_ts_release","ts_int_high","ts_int_low";
+			pinctrl-0 = <&ts_int_active &ts_reset_active>;
+			pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+			pinctrl-2 = <&ts_release>;
+			pinctrl-3 = <&ts_int_high>;
+			pinctrl-4 = <&ts_int_low>;
+
+			power_self_ctrl = <0>;
+			vci-supply = <&pm8953_l10>;
+			vddio-supply = <&pm8953_l6>;
+			vci_power_type = <1>;/*0 - gpio control  1 - ldo  2 - boost & gpio*/
+			vci_ldo_value = <3000000>;
+			vddio_power_type = <1>;/*0 - gpio control  1 - ldo  2 - boost & gpio*/
+			vddio_ldo_need_set = <0>;
+			vddio_ldo_value = <1800000>;
+
+			tools_support = <1>; /* support GTP tools APK ,0:no support; 1: support*/
+			roi_data_size = <7 7>; /* row and colume*/
+			gesture_supported = <0>;
+			roi_supported = <0>;
+			holster_mode_supported = <0>;
+			glove_mode_supported = <0>;
+			easy_wakeup_supported = <0>;
+			charger_supported = <0>;
+			gt1x_test_limit = <0>;
+
+			SENSORID0 {
+				compatible = "gt1x-sensorid-0";
+				panel_id = <0>;
+				module_vendor = "djn";
+				provide_panel_id_suppot = <1>;
+				project_id = "duba54240";
+			};
+
+			SENSORID1 {
+				compatible = "gt1x-sensorid-1";
+				panel_id = <1>;
+				module_vendor = "ofilm";
+				provide_panel_id_suppot = <1>;
+				project_id = "duba54000";
+			};
+
+			SENSORID2 {
+				compatible = "gt1x-sensorid-2";
+				panel_id = <2>;
+				module_vendor = "ofilm";
+				provide_panel_id_suppot = <1>;
+				project_id = "duba54000";
+			};
+		};
+	};
+};
+&rpm_bus {
+	rpm-regulator-ldoa6 {
+		pm8953_l6: regulator-l6 {
+			regulator-always-on;
+		};
+	};
+	rpm-regulator-ldoa10 {
+		pm8953_l10: regulator-l10 {
+			regulator-always-on;
+		};
+	};
+};

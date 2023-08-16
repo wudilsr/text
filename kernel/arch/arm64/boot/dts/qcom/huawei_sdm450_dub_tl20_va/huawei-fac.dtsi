@@ -1,0 +1,9 @@
+/{
+		huawei_fac_info {
+		compatible = "huawei,hw_fac_info";
+		fac,product_name = "DUB-TL20";
+		fac,hardware_ver = "HL3DUBM";
+		fac,software_ver = "DUB_TL20_VA";
+		status = "ok";
+	};
+};

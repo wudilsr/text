@@ -1,0 +1,9 @@
+/{
+		huawei_fac_info {
+		compatible = "huawei,hw_fac_info";
+		fac,product_name = "DUB-AL20";
+		fac,hardware_ver = "HL3DUBM";
+		fac,software_ver = "DUB_AL20_VA";
+		status = "ok";
+	};
+};

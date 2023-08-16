@@ -1,0 +1,35 @@
+/*
+ * Copyright (c) 2018, 2018 Huawei Ltd. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+/dts-v1/;
+
+#include "huawei_sdm450_base.dtsi"
+#include "huawei_sdm450_dub_al00a_va/huawei.dtsi"
+#include "lcdkit/dub_al00a_va/devkit_lcd.dtsi"
+#include "lcdkit/default/devkit_lcd.dtsi"
+/ {
+	model = "Qualcomm Technologies, Inc. DUB-AL00A";
+	compatible = "qcom,sdm450-qrd", "qcom,sdm450", "qcom,qrd";
+	qcom,board-id = <8102 1>;
+	qcom,pmic-id = <0x010016 0x25 0x0 0x0>;
+	huawei,modem_id = <0xF7FC0106 0x0>;
+};
+&rpm_bus {
+	rpm-regulator-ldoa10 {
+		pm8953_l10: regulator-l10 {
+			regulator-min-microvolt = <2850000>;
+			regulator-max-microvolt = <3000000>;
+			qcom,init-voltage = <3000000>;
+		};
+	};
+};
